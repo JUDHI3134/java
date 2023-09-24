@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #c9c1c1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    form{
+        min-width: 500px;
+        background-color: rgb(94, 127, 127);
+        font-size: 20px;
+        
+
+    }
+    label{
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+  div{
+    margin-bottom: 20px;
+  }
+  input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #reset{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+  }
+  #submit{
+    background-color: rgb(252, 0, 0);
+    color: white;
+    cursor: pointer;
+  }
+</style>
+<body>
+    <form action="">
+        <div>
+        <label for="name">
+            Name : <input type="text" name="name" id="name" placeholder="Enter Your name">
+        </label></div>
+         <div>
+        <label for="email">
+        Email : <input type="email" name="email" id="email" placeholder="Enter Your email">
+        </label></div>
+<div>
+        <label for="phone">
+            Phone : <input type="phone" name="phone" id="phone" placeholder="Enter Your phone">
+        </label></div>
+<div>
+        <label for="password">
+            Password : <input type="password" name="password" id="password" placeholder="Enter Your password">
+        </label></div>
+
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>
